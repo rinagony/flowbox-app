@@ -44,3 +44,32 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+Description
+
+Here at Flowbox we help our clients gather content from Facebook, Instagram, Pinterest, and
+other social media platforms that can then be displayed as a Flow(s) on our clients websites.
+Displaying that content in a visually appealing manner is important for us and our clients. Your
+task is to fetch content (photos) from an API (you don’t need to load real data from
+Instagram/Facebook/Twitter but instead you should mock the server call) and display that
+content in several different layouts (Grid, Carousel/Slider, and Cards). We recommend using
+React to build a web app (as we use it for our product) and TypeScript (if you know TS) that will
+fetch photos and information from an API. The app should display photos and descriptions of
+each photo. The user should be able to switch layout between a list view, grid view and carousel
+view.
+
+
+Objectives
+
+● Create a custom hook to fetch content (photos) from an API using Fetch AP (or mocking
+these calls with some predefined data).
+● Store data from API in a global state using Context API, Redux, MobX, Zustand, or
+whichever state management method you prefer.
+● Provide a way for the user to select the manner in which the content (photos) will be
+displayed (Grid, Carousel/Slider, list view and Cards). You don’t need to do it manually,
+and using third-party library(ies) is totally fine. See examples on the second page.
+● User should be able to quickly change between these three different layout types
+● Be sure to include unit testing using Jest and React Testing Library.
+● Create a github repo containing your app and share the link in an email once you have
+completed the task.
