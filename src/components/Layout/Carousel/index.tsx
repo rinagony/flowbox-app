@@ -4,7 +4,6 @@ import { PhotoData } from "../../../interfaces";
 import styled from "styled-components";
 import lodash from "lodash";
 import PhotoDescription from "../../Description";
-import React from "react";
 
 interface CarouselProps {
   photos: PhotoData[];
@@ -13,7 +12,7 @@ interface CarouselProps {
 const CarouselItem = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 3rem;
 `;
 
 const CarouselImage = styled.img`
@@ -38,10 +37,10 @@ const CarouselComponent = ({ photos }: CarouselProps) => {
         {chunkedPhotos.map((photoChunk, index) => (
           <CarouselItem key={index}>
             {photoChunk.map((photo) => (
-              <React.Fragment key={photo.id}>
+              <div key={photo.id}>
                 <CarouselImage src={photo.url} alt={photo.description} />
                 <PhotoDescription photo={photo} />
-              </React.Fragment>
+              </div>
             ))}
           </CarouselItem>
         ))}
